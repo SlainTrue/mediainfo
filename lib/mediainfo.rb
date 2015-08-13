@@ -318,6 +318,9 @@ class Mediainfo
     mediainfo_int_reader :resolution
     alias_method :sample_bit_depth, :resolution
 
+    mediainfo_attr_reader :title, "Title"
+    mediainfo_attr_reader :language, "Language"
+
     mediainfo_attr_reader :format
     mediainfo_attr_reader :format_profile
     mediainfo_attr_reader :format_version
