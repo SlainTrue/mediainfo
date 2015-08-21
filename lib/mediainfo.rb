@@ -320,6 +320,8 @@ class Mediainfo
 
     mediainfo_attr_reader :title, "Title"
     mediainfo_attr_reader :language, "Language"
+    mediainfo_attr_reader :default, "Default"
+    mediainfo_attr_reader :forced, "Forced"
 
     mediainfo_attr_reader :format
     mediainfo_attr_reader :format_profile
@@ -356,6 +358,11 @@ class Mediainfo
     mediainfo_attr_reader :format
     mediainfo_attr_reader :codec_id, "Codec ID"
     mediainfo_attr_reader :codec_info, "Codec ID/Info"
+    
+    mediainfo_attr_reader :title, "Title"
+    mediainfo_attr_reader :language, "Language"
+    mediainfo_attr_reader :default, "Default"
+    mediainfo_attr_reader :forced, "Forced"
   end
   
   class MenuStream < Stream
